@@ -1,5 +1,7 @@
 # Smart Route Planner
 
+![C++ Build and Tests](https://github.com/asadaliprofile/smart-route-planner-cpp/actions/workflows/ci.yml/badge.svg)
+
 **A modular C++ application for graph algorithms, shortest-path computation, road-network management, and performance benchmarking.**
 
 Smart Route Planner is a console-based application developed in modern C++ to explore and compare graph algorithms through practical route-planning scenarios.
