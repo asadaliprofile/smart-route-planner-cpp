@@ -351,7 +351,9 @@ Possible extensions include graphical network visualization, additional network-
 
 ## License
 
-License information will be added before public release.
+This project is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Connect With Me
 
