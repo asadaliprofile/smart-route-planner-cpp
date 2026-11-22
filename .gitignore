@@ -1,0 +1,42 @@
+
+# Build directories
+build/
+build-release/
+cmake-build-*/
+out/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# Compiled binaries
+*.exe
+*.dll
+*.o
+*.obj
+*.a
+*.lib
+*.pdb
+
+# Temporary testing files
+route_network_test.csv
+invalid_network_test.csv
+
+# Local user-generated networks
+data/network.csv
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+build-error.txt
+
+# Keep documented benchmark measurements
+!data/benchmark_results.csv

@@ -1,0 +1,10 @@
+type,field1,field2,field3
+CITY,"A",0,0
+CITY,"B",0.5,0
+CITY,"C",0,0.5
+CITY,"D",0.5,0.5
+ROAD,"A","B",4
+ROAD,"A","C",2
+ROAD,"B","D",3
+ROAD,"B","C",1
+ROAD,"C","D",3
