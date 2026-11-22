@@ -1,6 +1,6 @@
 # Smart Route Planner
 
-![C++ Build and Tests](https://github.com/asadaliprofile/smart-route-planner-cpp/actions/workflows/ci.yml/badge.svg)
+[![C++ Build and Tests](https://github.com/asadaliprofile/smart-route-planner-cpp/actions/workflows/ci.yml/badge.svg)](https://github.com/asadaliprofile/smart-route-planner-cpp/actions/workflows/ci.yml)
 
 **A modular C++ application for graph algorithms, shortest-path computation, road-network management, and performance benchmarking.**
 
