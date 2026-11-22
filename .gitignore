@@ -40,3 +40,6 @@ build-error.txt
 
 # Keep documented benchmark measurements
 !data/benchmark_results.csv
+
+# GitHub Actions local build directory
+build-ci/

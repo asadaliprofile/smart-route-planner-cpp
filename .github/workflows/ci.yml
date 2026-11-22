@@ -1,0 +1,46 @@
+
+name: C++ Build and Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    name: Windows MSYS2 UCRT64
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up MSYS2
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: true
+          install: >-
+            mingw-w64-ucrt-x86_64-gcc
+            mingw-w64-ucrt-x86_64-cmake
+            mingw-w64-ucrt-x86_64-ninja
+
+      - name: Configure Release build
+        shell: msys2 {0}
+        run: |
+          cmake -S . -B build-ci \
+            -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release
+
+      - name: Compile project
+        shell: msys2 {0}
+        run: |
+          cmake --build build-ci --parallel 2
+
+      - name: Run automated tests
+        shell: msys2 {0}
+        run: |
+          ctest --test-dir build-ci \
+            --output-on-failure
